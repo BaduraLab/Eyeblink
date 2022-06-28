@@ -43,7 +43,7 @@ for k = 1 : length(Files)
     %From here on we start calculating stuff
     traces_orig=traces;
     t=t-t(USstart(1)); % time 0 is when puff is triggered
-    t_ms = t*100;
+    t_ms = t*1000;
    
     %Baseline
     traces=bsxfun(@minus, traces, median(traces(:,t<-.3),2));
