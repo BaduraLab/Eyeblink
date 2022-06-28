@@ -27,7 +27,7 @@ for k = 1 : length(Files)
     % From here on we start calculating stuff:
     traces_orig=traces;
     t=t-t(USstart(1));
-    t_ms = t*100;
+    t_ms = t*1000;
     %Remove trace offset
     traces=bsxfun(@minus, traces, median(traces(:,t<-.3),2)); %substract the median between traces when t<-0.3 and 2 from the total traces. This is why we save traces_orig before.
     %traces=traces(:, t<1.24); % use only if something weird happens at the end of the traces
