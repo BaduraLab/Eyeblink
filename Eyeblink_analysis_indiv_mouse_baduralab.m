@@ -44,7 +44,7 @@ plot(tracesnorm')
 traces_US_trials = tracesnorm(ttype==1,:);
 traces_CSUS_trials = tracesnorm(ttype==2,:); 
 traces_CS_trials = tracesnorm(ttype==3,:);
-t_ms = t*100;
+t_ms = t*1000;
 figure
 hold all
 plot(t_ms,traces_CSUS_trials,'color',[0.85,0.33,0.10]); 
